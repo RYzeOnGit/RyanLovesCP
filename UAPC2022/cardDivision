@@ -1,0 +1,9 @@
+R, L = map(int, input().split())
+
+# Sum of numbers from R to L
+sum_numbers = (L * (L + 1) // 2) - ((R - 1) * R // 2)
+
+# Find the remainder when the sum is divided by 9
+result = sum_numbers % 9
+
+print(result)

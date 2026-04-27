@@ -2,9 +2,10 @@
 # Space complexity: O(1)
 # How we solve it:
 # 1. We sort the array
-# 2. We then iterate through the array and check if the number is the start of a sequence
+# 2. We check if the first number is the same as the previous number
 # 3. We then use two pointers to find the other two numbers that sum to the target
 # 4. We then return the result
+
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         res = []
